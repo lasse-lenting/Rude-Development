@@ -27,6 +27,8 @@ function onSignIn(googleUser) {
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
+var lengthOfName = profile.getName();
+document.getElementById('message').innerHTML = lengthOfName;
 </script>
 </head>
 <body>
@@ -94,6 +96,7 @@ logged_out_greeting="Hello! Welcome to Rude Development">
 
                <div class="col-md-12 col-sm-12">
                     <h2>Rude Developement.</h2>
+                    <h2 id="message"></h2>
                     <div class="g-signin2" data-onsuccess="onSignIn"></div>
                     <hr>
 
