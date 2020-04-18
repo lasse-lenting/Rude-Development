@@ -7,6 +7,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
+<meta name="google-signin-client_id" content="134745050345-e26n8numhf528d4c7n1jq70ul575uods.apps.googleusercontent.com">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <title>Rude Developement</title>
@@ -15,7 +16,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link href="prism.css" rel="stylesheet" />
-
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
@@ -48,6 +49,7 @@ logged_in_greeting="Hello! Welcome to Rude Development"
 logged_out_greeting="Hello! Welcome to Rude Development">
 </div>
 <!-- PRE LOADER -->
+
 <script src="prism.js"></script>
 
 <div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -84,6 +86,7 @@ logged_out_greeting="Hello! Welcome to Rude Development">
 
                <div class="col-md-12 col-sm-12">
                     <h2>Rude Developement.</h2>
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
                     <hr>
 
                </div>
